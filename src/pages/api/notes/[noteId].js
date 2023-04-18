@@ -30,9 +30,7 @@ const handler = async (req, res) => {
     }
 
     res.status(201).json({ message: "note updated!" });
-  }
-
-  if (req.method === "DELETE") {
+  } else if (req.method === "DELETE") {
     await connectToDatabase();
 
     let note;
@@ -55,9 +53,8 @@ const handler = async (req, res) => {
     } catch (error) {
       throw new Error("Unable to delete note");
     }
+    res.status(201).json({ message: "task deleted" });
   }
-
-  res.status(201).json({ message: "task deleted" });
 };
 
 export default handler;
