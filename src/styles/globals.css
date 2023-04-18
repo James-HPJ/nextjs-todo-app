@@ -2,10 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+/* MainNavigation Component */
+.navbar {@apply fixed top-0 w-full z-10 p-5 bg-gradient-to-r from-lime-500 to-green-500 }
+.brand {@apply font-mono font-bold text-2xl}
+.btn-logout {@apply p-2 rounded hover:text-white hover:ring hover:scale-110 transition ease-in duration-300}
+
+/* Form Component */
+.form-container {@apply container md:w-1/2 text-center mx-auto p-4 m-4 mt-20 }
+.form-inputs {@apply w-full px-4 py-2 focus:outline-0}
+.btn-add {@apply w-full rounded border font-semibold bg-green-400 p-3 hover:text-white hover:ring ring-slate-200 transition ease-out duration-500}
+.btn-cancel {@apply w-full rounded border font-semibold bg-red-400 p-3 hover:text-white hover:ring ring-slate-200 transition ease-out duration-500}
+
+/* Noteitem Component */
+.list-item {@apply max-w-4xl mx-auto flex flex-col sm:flex-row gap-3 text-center sm:text-left border shadow p-2 pt-4 first:rounded-t last:rounded-b odd:bg-slate-200 relative}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +30,5 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Montserrat';
 }
