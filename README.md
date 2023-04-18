@@ -4,6 +4,15 @@ This is a simple to-do app built using Next.js and Next-Auth for authentication.
 
 ![taskKeeper](https://user-images.githubusercontent.com/85088804/232824199-c7ecb2db-b86b-4fe1-afb3-8dc772dd5ddf.png)
 
+## Table of Contents
+
+- [Next.js Todo App](#nextjs-todo-app)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Getting Started](#getting-started)
+  - [Deployment](#deployment)
+  - [Contributing](#contributing)
+
 ## Features
 
 - User authentication using Next-Auth(credentials provider)
